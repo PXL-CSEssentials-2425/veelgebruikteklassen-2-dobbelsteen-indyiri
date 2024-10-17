@@ -20,5 +20,37 @@ namespace H4Oef2Dobbelsteen
         {
             InitializeComponent();
         }
+
+        StringBuilder sb = new StringBuilder();
+        Random rnd = new Random();
+
+        private void closeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void againButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultTextBox.Clear();
+            startButton.Focus();
+            sb.Clear();
+        }
+
+        private void startButton_Click(object sender, RoutedEventArgs e)
+        {
+            int worp = 0;
+            int resultaatWorp;
+
+            do
+            {
+                resultaatWorp = rnd.Next(1, 7);
+                worp++;
+
+                sb.AppendLine($"Worp {worp} geeft {resultaatWorp}");
+            }
+            while (resultaatWorp != 6);
+            
+            resultTextBox.Text = sb.ToString();
+        }
     }
 }

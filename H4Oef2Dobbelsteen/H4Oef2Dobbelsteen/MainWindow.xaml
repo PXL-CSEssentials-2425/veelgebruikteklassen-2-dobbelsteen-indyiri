@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Height="147" Margin="28,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" IsEnabled="False"/>
-        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Height="31" Margin="482,86,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="closeButton" Content="Sluiten" HorizontalAlignment="Left" Height="31" Margin="482,0,0,0" VerticalAlignment="Center" Width="120"/>
-        <Button x:Name="againButton" Content="Opnieuw" HorizontalAlignment="Left" Height="32" Margin="482,144,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Height="348" Margin="53,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="372" IsEnabled="False"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Height="31" Margin="482,86,0,0" VerticalAlignment="Top" Width="120" Click="startButton_Click"/>
+        <Button x:Name="closeButton" Content="Sluiten" HorizontalAlignment="Left" Height="31" Margin="482,0,0,0" VerticalAlignment="Center" Width="120" Click="closeButton_Click"/>
+        <Button x:Name="againButton" Content="Opnieuw" HorizontalAlignment="Left" Height="32" Margin="482,144,0,0" VerticalAlignment="Top" Width="120" Click="againButton_Click"/>
 
     </Grid>
 </Window>
